@@ -1,4 +1,5 @@
-n = ARGV[0]
-for i in 0..n.to_i do
- puts (i % 15 == 0) ? "fizz-buzz" : ((i % 3 ==0) ? "fizz" : ((i %5 == 0) ? "buzz" : i))
+sum = 0
+for i in 1..1000 do
+  sum += ((i % 3 == 0) || (i % 5 == 0)) ? i : 0
 end
+puts sum
